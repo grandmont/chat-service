@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  chat-service:
+    build: .
+    container_name: chat-service
+    ports:
+      - "39980:39980"
+    command: node build/app.js
+    environment:
+      NODE_ENV: production
+      PORT: 39980

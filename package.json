@@ -1,0 +1,26 @@
+{
+  "name": "chat-service",
+  "version": "1.0.0",
+  "description": "A lightweight, scalabe and simple chat service\"",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsnd --no-notify --respawn --transpile-only -- ./src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "build:production": "tsc -p tsconfig.release.json"
+  },
+  "repository": "https://github.com/grandmont/chat-service",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ioredis": "^4.17.2",
+    "@types/jest": "^26.0.7",
+    "@types/node": "^14.0.26",
+    "@types/ws": "^7.2.6",
+    "jest": "^26.1.0",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "ioredis": "^4.17.3",
+    "ws": "^7.3.1"
+  }
+}
